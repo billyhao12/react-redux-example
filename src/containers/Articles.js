@@ -3,7 +3,7 @@ import { connect } from "react-redux"
 
 import Article from "../components/Article/Article"
 import AddArticle from "../components/AddArticle/AddArticle"
-import * as actionTypes from "../store/actionTypes";
+import { simulateHttpsRequest } from '../store/actionCreators';
 
 const Articles = ({ articles }) => {
   const saveArticle = e => {
@@ -28,8 +28,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        saveArticle: article =>
-            dispatch({ type: actionTypes.ADD_ARTICLE, articleData: { article } }),
+        saveArticle: article => dispatch(simulateHttpsRequest(article))
     }
 }
 
