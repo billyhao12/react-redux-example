@@ -11,8 +11,8 @@
     justify-content: center;
     border-radius: 0.3rem;
 }
-  
-  .add-article input {
+
+.add-article input {
     display: block;
     margin: auto;
     margin-bottom: 0.5rem;
@@ -21,8 +21,8 @@
     border: 1px solid #333;
     border-radius: 0.3rem;
 }
-  
-  .add-article button {
+
+.add-article button {
     width: 21rem;
     padding: 0.7rem;
     border: 1px solid #333;
